@@ -16,7 +16,7 @@ img {
     height: auto;
 }
 a {
-	 text-decoration:none;
+	text-decoration:none;
 	color:#000;
 	outline:none;
 }
@@ -73,13 +73,13 @@ figure { margin:0; padding:0; }
 }
 .header-logo{
     float: left;
-    margin-left: 25px;
+    margin-left: 10px;
     margin-top: 25px;
 }
 .header-logo img{width: 170px;}
 .nav{ 
     float: right;
-    margin-right: 10px;
+    margin-right: 5px;
     margin-top: 25px;
 }
 .header-nav{
@@ -147,6 +147,7 @@ figure { margin:0; padding:0; }
     padding-left: 10px;
 }
 .img-banner{margin-bottom: 30px;}
+.img-banner img{width: 100%;}
 .main-banner{
     position: absolute;
     top: 50%;
@@ -187,10 +188,13 @@ figure { margin:0; padding:0; }
     float: left;
 }
 .block-holder{
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     width: 33.33%;
     padding-right: 30px;
     padding-bottom: 15px;
+    margin-left: -4px;
+    padding-left: 10px;
 }
 .block-holder-content{overflow: hidden;}
 .block-holder strong{
@@ -307,17 +311,14 @@ figure { margin:0; padding:0; }
     margin: 0 auto;
 }
 .built{
-    position: relative;
     margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-top: 25px;
+    padding-bottom: 15px;
 }
 .built-img img{height: fit-content;}
-.built .absolute{
-    position: absolute;
-    top: 45px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
 .built .post-heading{margin-bottom: 5px;}
 .built .post-heading h3{color: #fff;}
 .built .post-heading span{
@@ -492,6 +493,7 @@ figure { margin:0; padding:0; }
     display: block;
     line-height: 18px;
     color: #fff;
+    text-align: left;
 }
 .pic-discription{
     position: relative;
@@ -682,7 +684,6 @@ figure { margin:0; padding:0; }
         overflow: hidden;
     }
     .sponsor-img{margin: 0 0 20px;}
-    .sponsor-img img{margin: inherit;}
     .about-list { margin: 0 0 0 20px; }
     .sponsor-discription p{padding: 0 0 10px;}
     .sponsor-content{padding: 0 10px;}
@@ -692,7 +693,7 @@ figure { margin:0; padding:0; }
     .nav{
         display:block;
         position: absolute;
-        right: 370px;
+        right: 400px;
         width: 100%;
         margin-right: 0;
         background: #000;
@@ -768,7 +769,11 @@ figure { margin:0; padding:0; }
         color: #000;
         text-align: center;
     }
-    .block-holder{width: 100%;}
+    .block-holder{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
     .block-holder p{text-align: center;}
     .product-discription h3{
         font-size: 22px;
@@ -794,6 +799,8 @@ figure { margin:0; padding:0; }
     .team-content{
         width: 100%;
         margin-bottom: 15px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .feedback .post-heading h3 {
         font-size: 22px;
@@ -823,4 +830,5 @@ figure { margin:0; padding:0; }
         margin-bottom: 10px;
     }
     .about-list{margin: 0;}
+    .about-img img{margin: 0 auto;}
 }
