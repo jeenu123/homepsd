@@ -1,0 +1,482 @@
+html { box-sizing: border-box;}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+body {
+	margin:0;
+	color:#f4f5f7;
+	font: 12px/15px Arial, Helvetica, sans-serif;
+	height:100%;
+}
+img {
+    border-style:none;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+a {
+	text-decoration:none;
+	color:#000;
+	outline:none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+html { height:100%;}
+a:hover {text-decoration:underline;}
+a:active {background-color: transparent;}
+input,
+textarea,
+select {
+	font:100% Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	color:#000;
+	outline:none;
+}
+form, fieldset {
+	margin:0;
+	padding:0;
+    border-style:none;
+    overflow: hidden;
+}
+button::-moz-focus-inner {
+	padding:0;
+	margin:0;
+}
+header, footer, article, section, nav, figure, aside, main { display: block; }
+figure { margin:0; padding:0; }
+#wrapper{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.header{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+}
+.header-logo{
+    float: left;
+    padding-top: 50px;
+}
+.nav{
+    float: right;
+    margin-top: 30px;
+    background-color: #e2494b;
+    border-radius: 20px;
+}
+.nav li{
+    display: inline-block;
+    vertical-align: top;
+}
+.nav li a{
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    margin: 20px 10px;
+}
+.nav li a:hover{
+    color: #ee9395;
+    text-decoration: none;
+}
+.product{margin-bottom: 30px;}
+.product-discription {
+    margin: 0 auto;
+    text-align: center;
+}
+.product-discription p{
+    font-size: 22px;
+    line-height: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333333;
+    font-style: italic;
+    padding: 0 80px;
+}
+.service-heading{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.service-heading h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    margin: 0;
+    position: relative;
+}
+.service-heading h2 span{
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #e2494b;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: normal;
+}
+.service-heading h2::before{
+    border: 1px solid #333333;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+}
+.row{
+    width: 100%;
+    overflow: hidden;
+}
+.services{margin-bottom: 35px;}
+.col{
+    width: 33.33%;
+    float: left;
+    padding: 0 8px;
+}
+.col-img{
+    float: left;
+}
+.col-content span{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #333333;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.col-content p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #979797;
+    margin-left: 5px;
+}
+.col-content .read{
+    display: inline-block;
+    vertical-align: top;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #e2494b;
+    padding: 0 5px;
+}
+.work{margin-bottom: 40px;}
+.col-players{
+    width: 20%;
+    float: left;
+    padding: 0 8px;
+}
+.col-content-players strong{
+    color: #979797;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 8px;
+}
+.col-content-players span{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    padding-top: 10px;
+    padding-left: 4px;
+}
+.col-content-players p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #979797;
+    margin: 8px 0;
+}
+.col-content-players .read{
+    display: inline-block;
+    vertical-align: top;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #e2494b;
+    padding: 0;
+}
+.players{margin-bottom: 35px;}
+.col-work{
+    width: 33.33%;
+    float: left;
+    padding: 0 8px;
+}
+.footer{
+    width: 100%;
+    overflow: hidden;
+    background-color: #e2e2e2;
+    padding-bottom: 20px;
+}
+.footer .row{
+    margin-top: 30px;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 25px;
+}
+.footer-col{
+    width: 50%;
+   float: left;
+}
+.footer-col .col-img{
+    border: 1px solid #333333;
+    padding: 4px;
+}
+.article{
+    overflow: hidden;
+   margin-bottom: 20px;
+}
+.footer-col h3{
+    color: #333333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 10px 0;
+    padding: 0;
+}
+.footer-col-content{
+    overflow: hidden;
+    padding: 15px 0 0 5px;
+}
+.footer-col-content p{
+    color: #333333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 10px;
+}
+.footer-col-content h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #e2494b;
+    margin: 0 0 10px 10px;
+}
+.company{
+    width: 50%;
+    float: left;
+}
+.details{margin-bottom: 15px;}
+.details li{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    padding-bottom: 2px;
+}
+.contact li{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    margin-bottom: 2px;
+}
+.contact li a:hover{
+    list-style-type: none;
+    text-decoration: none;
+    color: #e2494b;
+}
+.contact li .mail{color: #e2494b;}
+.time{
+    margin-bottom: 15px;
+}
+.time .office{
+    display: block;
+    color: #333333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+}
+.time li{
+    color: #333333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+.input-holder{
+    overflow: hidden;
+    padding: 0 6px;
+}
+.form input{
+    border-radius: 6px;
+    margin: 5px 0;
+    padding: 8px 5px;
+    width: 215px;
+    border: none;
+    display: block;
+}
+.form textarea{
+    resize: none;
+    border: none;
+    border-radius: 6px;
+    margin: 5px 0;
+    padding: 8px 5px;
+    width: 215px;
+    height: 100px;
+    display: block;
+}
+.form .submit{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #e2494b;
+    padding: 10px 10px;
+    width: inherit;
+}
+.copyright{
+    border-top: 2px solid #fff;
+    padding: 2px 0;
+}
+.copyright-content p{
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+}
+.copyright-content .right{
+    float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+}
+@media only screen and (max-width:991px){
+    .form input{width: 175px;}
+    .form textarea{width: 175px;}
+}
+@media only screen and (max-width:767px){
+    .navigation {
+        padding-top: 55px;
+        display: block;
+    }
+    .nav-opener{
+        width: 32px;
+        height: 20px;
+        position: relative;
+        display: block;
+        margin: 0 0 0 auto;
+    }
+    .nav-opener::before,
+    .nav-opener span,
+    .nav-opener::after{
+        height: 4px;
+        background-color: #000;
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: all 0.30s ease-in-out;
+    }
+    .nav-opener span{top:8px;}
+    .nav-opener::after{top:16px;}
+
+    .navigation.nav-active .nav-opener span{ opacity: 0; }
+    .navigation.nav-active .nav-opener::before,
+    .navigation.nav-active .nav-opener::after{
+        top:8px;
+        transform: rotate(45deg);
+    }
+    .navigation.nav-active .nav-opener::after{
+        transform: rotate(-45deg);
+    }
+    .nav li{
+        display: block;
+    }
+    .navigation.nav-active .nav{ right: 0; }
+    .nav{
+        display:block;
+        position: absolute;
+        right: 800px;
+        width: 100%;
+        margin-right: 0;
+        background: #e2494b;
+        padding-bottom: 15px;
+        transition: right 0.5s ease;
+    }
+    .product-discription p{
+        font-size: 14px;
+        line-height: 16px;
+        padding: 0;
+    }
+    .col {
+        width: 100%;
+        float: left;
+        padding: 0 0px;
+        margin-bottom: 15px;
+    }
+    .col-players {
+        width: 100%;
+        padding: 0 0;
+        margin-bottom: 15px;
+    }
+    .col-content-players{
+        overflow: hidden;
+        padding: 0 8px;
+    }
+    .col-work .col-img{
+        float: none;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .col-work {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .col-work .col-img img{width: 100%;}
+    .footer-col { width: 100%;}
+    .footer-col-content{padding: 0;}
+    .company {
+        width: 100%;
+        text-align: center;
+    }
+    .form input {
+        margin: 8px 0;
+        padding: 10px 10px;
+        width: 280px;
+    }
+    .form textarea {
+        margin: 8px 0;
+        padding: 10px 10px;
+        width: 280px;
+    }
+    .copyright-content p{
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+    }
+    .copyright-content .right{
+        float: none;
+        margin: 10px 0;
+    }
+    .input-holder{text-align: center;}
+}
