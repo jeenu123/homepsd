@@ -301,7 +301,7 @@ figure { margin:0; padding:0; }
 .time{
     margin-bottom: 15px;
 }
-.time .office{
+.office{
     display: block;
     color: #333333;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -347,6 +347,8 @@ figure { margin:0; padding:0; }
     background-color: #e2494b;
     padding: 10px 10px;
     width: inherit;
+    display: inline-block;
+    vertical-align: top;
 }
 .copyright{
     border-top: 2px solid #fff;
@@ -366,6 +368,7 @@ figure { margin:0; padding:0; }
     line-height: 16px;
     color: #999999;
 }
+.copyright-content{overflow: hidden;}
 @media only screen and (max-width:991px){
     .form input{width: 175px;}
     .form textarea{width: 175px;}
@@ -460,12 +463,12 @@ figure { margin:0; padding:0; }
     .form input {
         margin: 8px 0;
         padding: 10px 10px;
-        width: 280px;
+        width: 100%;
     }
     .form textarea {
         margin: 8px 0;
         padding: 10px 10px;
-        width: 280px;
+        width: 100%;
     }
     .copyright-content p{
         font-size: 12px;
@@ -479,4 +482,6 @@ figure { margin:0; padding:0; }
         margin: 10px 0;
     }
     .input-holder{text-align: center;}
+    .form .submit{width: 100%;}
+    .copyright-content{padding-top: 10px;}
 }
