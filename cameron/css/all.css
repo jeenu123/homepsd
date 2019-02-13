@@ -189,6 +189,7 @@ ul.breadcrumb {
   padding-left: 14px;
   padding-bottom: 18px;
   background-color: #404040;
+  overflow: hidden;
 }
 ul.breadcrumb li {
   display: inline;
@@ -202,6 +203,9 @@ ul.breadcrumb li+li:before {
 ul.breadcrumb li+li:last-child:before {
   display: none;
 }
+ul.project li:before {
+  display: none;
+}
 ul.breadcrumb li a {
   color: #be6733;
   text-decoration: none;
@@ -211,8 +215,8 @@ ul.breadcrumb li a {
   font-weight: bold;
 }
 ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
+  color: #3497ff;
+  text-decoration: none;
 }
 .btn{float: right;}
 .btn button{
@@ -223,6 +227,19 @@ ul.breadcrumb li a:hover {
   padding: 6px 12px;
   border-radius: 5px;
   cursor: pointer;
+}
+.btn-yellow button{
+  background-color: #f1ae43;
+  border: none;
+  margin-right: 18px;
+  color: #fff;
+  padding: 6px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn button:hover {
+  background-color: #3497ff;
+  color: #fff;
 }
 .graph-content {
   overflow: hidden;
@@ -258,6 +275,7 @@ ul.breadcrumb li a:hover {
 .graph {float: right;}
 .main {
   min-height: 1326px;
+  overflow: hidden;
 }
 .main-nav {
   text-align: left;
@@ -451,6 +469,147 @@ td select {
 .footer-content {
   padding: 21px 15px;
 }
+
+/* Inner Page HTML */
+
+.col-container {
+  width: 48%;
+  border: 1px solid #666666;
+  border-radius: 3px;
+  margin-left: 1%;
+  overflow: hidden;
+  margin-top: 20px;
+  float: left;
+}
+.col-content h1 {
+  color: #3496ff;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 32px;
+}
+.col-content h2 {
+  color: #3496ff;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 32px;
+}
+.col-content {
+  background-color: #f1f1f1;
+  padding: 40px 25px 40px 25px;
+}
+.sub-heading {overflow: hidden;}
+.sub-heading span {
+ float: left;
+  margin: 0;
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+.sub-heading a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3496ff;
+  float: right;
+}
+.small-col-holder {
+  overflow: hidden;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.small-col {
+  float: left;
+  border: 1px solid #6666;
+  padding: 15px 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  min-height: 120px;
+  width: calc(20% - 10px);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.small-col .dates {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #666666;
+  display: block;
+}
+.small-col .days {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #3e3e3e;
+  display: block;
+}
+.small-col a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  display: block;
+  color: #666666;
+}
+.small-col .red {
+  color: #bb0000;
+}
+.calculation {overflow: hidden;}
+.submittal {float: left;}
+.submittal-content {
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 20px;
+  float: left;
+
+}
+.submittal-content strong {
+  color: #3496ff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+.submittal-content img {padding-top: 10px;}
+.usage-content {
+  display: block;
+  color: #58b957;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  overflow: hidden;
+  padding-top: 15px;
+}
+.usage-content-un {
+  display: block;
+  color: #3d3d3d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  overflow: hidden;
+}
+.usage-content-re {
+  display: block;
+  color: #bb0000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  overflow: hidden;
+}
+.activity {
+  float: right;
+  padding-top: 50px;
+}
+.col {overflow: hidden;}
+
+ /* End of Inner Page CSS */
+
 @media only screen and (max-width:1199px){
   .usage {width: 205px;}
   .graph {width: 75%;}
@@ -460,6 +619,11 @@ td select {
     line-height: 16px;
     padding: 10px 20px 10px 28px;
   }
+
+  /* Inner Page CSS */
+  .small-col {min-height: 136px;}
+  .submittal-content {padding-left: 2px;}
+  .activity {width: 58%;}
 }
 @media only screen and (max-width: 991px){
   .nav li a {
@@ -480,6 +644,21 @@ td select {
   }
   .graph { width: 70%; }
   .footer-content .subscribe { min-width: 45%; }
+  
+  /* Inner page CSS */
+
+  .col-content {
+    padding: 40px 5px 40px 5px;
+  }
+  .small-col {width: calc(33% - 10px);}
+  .submittal-content { padding-left: 50px; }
+  .activity {
+    width: 88%;
+    margin: 0 auto;
+    float: none;
+  }
+  .submittal {margin-bottom: 10px;}
+  .col {margin-bottom: 50px;}
 }
 @media only screen and (max-width: 767px){
   .container {
@@ -597,5 +776,29 @@ td select {
     float: none;
     text-align: center;
     margin-bottom: 4px;
+  }
+  .graph-content .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* Inner Page CSS */
+
+  .col-content { padding: 15px 5px 30px 5px; }
+  .col-container {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: none;
+    margin-top: 15px;
+  }
+  ul.breadcrumb li {
+    margin-bottom: 5px;
+  }
+  .breadcrumb.project li {display: block;}
+  .project .btn-yellow {display: block;}
+  .btn button {
+    margin: 0;
+    margin-right: 5px;
   }
 }
