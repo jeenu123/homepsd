@@ -24,6 +24,14 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+}
+li {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: normal;
 }
 html { height:100%;}
 a:hover {text-decoration:none;}
@@ -274,7 +282,7 @@ ul.breadcrumb li a:hover {
 }
 .graph {float: right;}
 .main {
-  min-height: 1326px;
+ margin-bottom: 40px;
   overflow: hidden;
 }
 .main-nav {
@@ -609,6 +617,65 @@ td select {
 .col {overflow: hidden;}
 
  /* End of Inner Page CSS */
+
+ /* User Page CSS */
+.slider-holder {
+  overflow: hidden;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-slider-img {
+  float: left;
+  width: 60%;
+}
+.main-slider-img img {width: 100%;}
+.slider-sub-img {
+  width: 40%;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.sub-img {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.sub-img li {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 33.333%;
+}
+.sub-img img {width: 100%;}
+.week {
+  padding-top: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+.week .prev,
+.week .next {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #01447e;
+  color: #fff;
+  float: left;
+}
+.week span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  width: 18%;
+}
+.week span input {width: 18%;}
+.week .next {float: right;}
+.del {color: #bb0000;}
 
 @media only screen and (max-width:1199px){
   .usage {width: 205px;}
