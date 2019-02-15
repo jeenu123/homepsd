@@ -159,6 +159,8 @@ figure { margin:0; padding:0; }
   border-radius: 10% 10% 0 0%;
   margin-top: 5px;
   text-align: center;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 .nav li a {
   color: #f1f1f1;
@@ -208,6 +210,7 @@ ul.breadcrumb li+li:before {
   color: #666666;
   content: "/\00a0";
 }
+
 ul.breadcrumb li+li:last-child:before {
   display: none;
 }
@@ -299,6 +302,8 @@ ul.breadcrumb li a:hover {
   background-color: #a7a7a7;
   border-radius: 7% 7% 0% 0%;
   width: 116px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 .main-nav li a {
   font-family: Arial, Helvetica, sans-serif;
@@ -372,6 +377,7 @@ table {
   padding-top: 13px;
   width: 100%;
   padding-left: 10px;
+  padding-bottom: 20px;
 }
 th {
   background-color: #666666;
@@ -657,7 +663,7 @@ td select {
 .week .prev,
 .week .next {
   border: none;
-  padding: 5px 10px;
+  padding: 5px 0;
   border-radius: 5px;
   background-color: #01447e;
   color: #fff;
@@ -671,11 +677,104 @@ td select {
   font-size: 12px;
   line-height: 14px;
   text-align: right;
-  width: 18%;
+  width: 12%;
 }
 .week span input {width: 18%;}
 .week .next {float: right;}
 .del {color: #bb0000;}
+
+/* Company Page CSS */
+
+.btn-green button{
+  background-color: #4CAF50;
+  border: none;
+  margin-right: 18px;
+  color: #fff;
+  padding: 6px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.alphabet {
+  float: left;
+  list-style-type: none;
+  padding-top: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+.alphabet li {
+  padding:0px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 4px;
+  padding-right: 4px;
+  color:#01447e;
+  display:inline;
+}
+.alphabet li:last-child {
+  border:none;
+  padding-right: 0px;
+}
+.alphabet li:hover {
+  color:#4CAF50;
+}
+.alphabet li .alp {
+  float: left;
+  color: #000;
+  pointer-events: none;
+}
+ul.company {
+  background-color: inherit;
+}
+ul.company li a {
+  color: #000;
+  font-weight: normal;
+}
+ul.company li {
+  color: #3d3d3d;
+}
+ul.breadcrumb.company li a:after {
+  display: inline;
+  padding: 0;
+  color: #666666;
+  content: "/\00a0";
+}
+.address span {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+.address p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  font-style: italic;
+  color: #3d3d3d;
+  margin: 0;
+  padding-top: 15px;
+}
+.btn-green button {
+  margin: 0 6px;
+}
+.btn-orange button {
+  background-color: #be6736;
+  margin: 0 6px;
+}
+.btn-blue button {
+  background-color: #3496ff;
+  margin: 0 6px;
+}
+ul.company li:last-child:before {
+  display: none;
+}
+ul.breadcrumb.company li.btn:before {display: none;}
+
+/* End */
 
 @media only screen and (max-width:1199px){
   .usage {width: 205px;}
@@ -726,6 +825,24 @@ td select {
   }
   .submittal {margin-bottom: 10px;}
   .col {margin-bottom: 50px;}
+
+  /* End of Inner Page CSS */
+
+  /* User Page Query */
+
+  .week .prev, 
+  .week .next {
+    width: 100%;
+    float: none;
+  }
+  .week span {
+    text-align: left;
+    width: 30%;
+    padding: 15px 0;
+  }
+  .week {margin-bottom: 20px;}
+
+  /* End of User Page Query */
 }
 @media only screen and (max-width: 767px){
   .container {
@@ -868,4 +985,27 @@ td select {
     margin: 0;
     margin-right: 5px;
   }
+
+  /* End of Inner Page CSS */
+
+  /* User Page Query */
+
+  .slider-holder {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-slider-img {
+    float: none;
+    width: 100%;
+  }
+  .slider-sub-img {
+    width: 100%;
+    padding-left: 0;
+  }
+  .week span {
+    width: 40%;
+    text-align: center;
+  }
+
+  /* End of User Page Query */
 }
