@@ -46,7 +46,7 @@ select {
 }
 form, fieldset {
 	margin:0;
-	padding:0;
+	padding:0 10px;
 	border-style:none;
 }
 button::-moz-focus-inner {
@@ -85,7 +85,6 @@ figure { margin:0; padding:0; }
   border-bottom: 1px solid #7c7c7c;
   box-shadow: inset 0 1px #555555, 1px 1px #555555;
 }
-
 .background::after {
   content: '';
   position: absolute;
@@ -97,11 +96,6 @@ figure { margin:0; padding:0; }
   padding-right: 35px;
   z-index: -1;
   background-color: #be673f;
-}
-#wrapper {
-  overflow: hidden;
-  position: relative;
-  display: block;
 }
 .container{
   padding-left: 15px;
@@ -325,7 +319,7 @@ ul.breadcrumb li a:hover {
   padding-left: 5px;
 }
 .form li {
-  margin-left: 11px;
+  margin-left: 25px;
   display: inline-block;
   vertical-align: top;
 }
@@ -341,14 +335,12 @@ ul.breadcrumb li a:hover {
   width: 62px;
   padding-top: 4px;
   padding-bottom: 4px;
-  margin-left: 3px;
 }
 .date span {
   color: #000;
 }
 .form li select {
   width: 123px;
-  margin-left: 12px;
   padding-top: 5px;
   border-radius: 5px;
   cursor: pointer;
@@ -369,15 +361,19 @@ ul.breadcrumb li a:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+.form li button:hover {
+  background-color: #4CAF50;
+}
 .form .clear {
   float: right;
   border: none;
 }
+.table-holder {overflow-x: auto;}
 table {
   padding-top: 13px;
   width: 100%;
-  padding-left: 10px;
   padding-bottom: 20px;
+  min-width: 1024px;
 }
 th {
   background-color: #666666;
@@ -408,7 +404,7 @@ td input {
   border-radius: 4px;
 }
 td button {
-  background-color: #01447e;
+  background-color: #3497ff;
   color: #fff;
   padding: 5px 5px;
   border: none;
@@ -443,7 +439,7 @@ td select {
   margin-right: 17px;
 }
 .pagination a {
-  color: #01447e;
+  color: #2e7cbf;
   padding: 9px 10px;
   display: inline-block;
   vertical-align: top;
@@ -476,13 +472,12 @@ td select {
   padding: 0;
   float: right;
 }
-.red {
-  color: #bb0000;
+.red { color: #bb0000; }
+.footer {
+  border-top: 1px solid #3d3d3d;
+  text-align: center;
 }
-.footer {border-top: 1px solid #3d3d3d;}
-.footer-content {
-  padding: 21px 15px;
-}
+.footer-content { padding: 21px 15px; }
 
 /* Inner Page HTML */
 
@@ -659,25 +654,29 @@ td select {
   margin-bottom: 40px;
   width: 100%;
   overflow: hidden;
+  text-align: center;
 }
 .week .prev,
 .week .next {
   border: none;
-  padding: 5px 0;
+  padding: 6px 6px;
   border-radius: 5px;
   background-color: #01447e;
   color: #fff;
   float: left;
+  cursor: pointer;
+}
+.weeks {
+  display: inline-block;
+  vertical-align: middle;
 }
 .week span {
   display: inline-block;
-  vertical-align: middle;
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 14px;
-  text-align: right;
-  width: 12%;
+  margin-right: 10px;
 }
 .week span input {width: 18%;}
 .week .next {float: right;}
@@ -773,6 +772,47 @@ ul.company li:last-child:before {
   display: none;
 }
 ul.breadcrumb.company li.btn:before {display: none;}
+label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.custom-checkbox .custom-input {
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #a7a7a7;
+  border: 1px solid #3d3d3d;
+}
+.custom-checkbox .custom-input:before{
+  content: "";
+  width: 13px;
+  height: 7px;
+  border: 3px solid #3496ff;
+  border-width: 0 0 3px 3px;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: rotate(-45deg);
+  margin-top: 2px;
+  margin-left: -2px;
+  opacity: 0;
+  cursor: pointer;
+}
+.custom-checkbox + .custom-input:before , .custom-checkbox:checked + .custom-input:before{
+  opacity: 1;
+}
+.custom-checkbox input {
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
 
 /* End */
 
@@ -944,8 +984,9 @@ ul.breadcrumb.company li.btn:before {display: none;}
     display: block;
     text-align: center; 
   }
-  .form .keywords input { width: 97%; }
-  .date input { width: 45%; }
+  .form .keywords input { width: 100%; }
+  .date input { width: 48%; }
+  .form li select { width: 100%; }
   .form .clear { float: none; }
   .footer-content aside {
     float: none;
