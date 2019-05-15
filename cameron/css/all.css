@@ -368,7 +368,10 @@ ul.breadcrumb li a:hover {
   float: right;
   border: none;
 }
-.table-holder {overflow-x: auto;}
+.table-holder {
+  overflow-x: auto;
+  min-width: 1000px;
+}
 table {
   padding-top: 13px;
   width: 100%;
@@ -406,10 +409,12 @@ td input {
 td button {
   background-color: #3497ff;
   color: #fff;
-  padding: 5px 5px;
+  padding: 5px 8px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 12px;
+  line-height: 16px;
 }
 td select {
   background-color: #fff;
@@ -775,36 +780,59 @@ ul.breadcrumb.company li.btn:before {display: none;}
 label {
   display: inline-block;
   vertical-align: middle;
+  margin-left: 15px;
 }
 .custom-checkbox .custom-input {
   display: inline-block;
   vertical-align: top;
-  width: 20px;
+  background: #d94d47;
+  width: 90px;
   height: 20px;
-  margin-right: 5px;
+  border-radius: 10px;
   position: relative;
-  border-radius: 50%;
-  background-color: #a7a7a7;
-  border: 1px solid #3d3d3d;
-}
-.custom-checkbox .custom-input:before{
-  content: "";
-  width: 13px;
-  height: 7px;
-  border: 3px solid #3496ff;
-  border-width: 0 0 3px 3px;
-  position: absolute;
-  top: 10%;
-  left: 20%;
-  transform: rotate(-45deg);
-  margin-top: 2px;
-  margin-left: -2px;
-  opacity: 0;
   cursor: pointer;
 }
-.custom-checkbox + .custom-input:before , .custom-checkbox:checked + .custom-input:before{
-  opacity: 1;
+.custom-checkbox .custom-input:after{
+  position: absolute;
+  right: 0;
+  top: -2px;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 0 3px #000;
+  transition: all 0.30s ease-in-out;
+  cursor: pointer;
 }
+.custom-checkbox .custom-input:before{
+  content: "Disabled";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  color: #fff;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0 12px;
+  transition: all 0.30s ease-in-out;
+}
+.custom-checkbox input:checked + .custom-input:after{
+  right:70px;
+}
+.custom-checkbox input:checked + .custom-input:before{
+  text-align: right;
+  content: "Enabled";
+}
+.custom-checkbox input:checked + .custom-input {
+background: #58b957;
+}
+.custom-checkbox input:checked ~ .custom-label{display:none;}
 .custom-checkbox input {
   position: fixed;
   opacity: 0;

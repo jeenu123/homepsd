@@ -1,0 +1,22 @@
+%ul{
+    display: inline-block;
+}
+%img{
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+%display{
+    display: inline-block;
+    vertical-align: top;
+}
+%clearfix{
+    display: block;
+    content: ' ';
+    clear: both;
+}
+%un-ordered-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

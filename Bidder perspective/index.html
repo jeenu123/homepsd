@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+  <title>Bidder Perspective</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+  <div id="wrapper">
+    <header class="header-wrapper">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-12">
+              <div class="header-img">
+                <a href="#"><img src="images/logo.png" alt="Cuckoo Travels"></a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="">
+                <form class="form-inline md-form form-sm mt-0">
+                  <div class="form-search">
+                    <button type="submit" class="fa fa-search"></button>
+                    <div class="overflow">
+                      <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search Advertisements" aria-label="Search">
+                    </div>  
+                  </div>
+                  <div class="dropdown">
+                    <ul>
+                      <li><a href="#">Find Luggage Partner</a></li>
+                      <li><a href="#">Earn Money by Carrying luggage</a></li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-7 col-xs-12">
+              <nav class="navbar navbar-default">
+                  <div class="">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">PRODUCTS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                      </ul>
+                      <ul class="right-nav">
+                        <li class="lock"><a href="#"><i class="fa fa-lock" aria-hidden="true"></i></a></li>
+                        <li><a class="tw-ic mr-3" role="button"><i class="fa fa-lg fa-twitter"></i></a></li>
+                        <li><a class="fb-ic mr-3" role="button"><i class="fa fa-lg fa-facebook-f"></i></a></li>
+                        <li><a class="fb-ic mr-3" role="button"><i class="fa fa-lg fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+              </nav>
+            </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-banner">
+        <img src="images/travel-banner_01.jpg" alt="Cuckoo Travel">
+      </div>
+      <div class=" container-custom">
+        <div class="row">
+          <div class="search-bar">
+            <div class="col-md-3"> 
+              <span class="custom-form-control">
+                <select class="form-control">
+                  <option value="" disabled selected>Search by Flight</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </span>
+          </div>
+          <div class="col-md-3"> 
+            <span class="custom-form-control">
+              <select class="form-control">
+                <option value="" disabled selected>Search by Airport</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </span>
+          </div>
+          <div class="col-md-3"> 
+            <span class="custom-form-control">
+              <select class="form-control">
+                <option value="" disabled selected>Search by Luggage</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </span>
+          </div>
+          <div class="col-md-3 text-right"> 
+              <button type="submit" class="btn btn-default">APPLY FILTER</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="post-container">
+                <div class="post-img-holder">
+                  <img src="images/luggage.png" alt="Luggage">
+                  <div class="img-content">
+                    <span>Amber Depp</span>
+                    <ul class="star-rating">
+                      <li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+                      <li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+                      <li><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+                      <li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+                      <li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-details">
+                  <span> FLying From</span>
+                  <strong> ISLAMABAD <span class="to">to</span> ISTANBUL </strong>
+                </div>
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse ">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapsetwo">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapsetwo" class="panel-collapse collapse ">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <span class="valid"><time datetime="2018-12-09">Valid till: 9 Dec 2018</time></span>
+                  <button type="submit" class="btn btn-default">WANT TO BID</button>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="post-container">
+                <div class="post-img-holder">
+                  <img src="images/luggage.png" alt="Luggage">
+                  <div class="img-content">
+                    <span>Amber Depp</span>
+                    <ul class="star-rating">
+                      <li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+                      <li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+                      <li><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+                      <li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+                      <li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-details">
+                  <span> FLying From</span>
+                  <strong> ISLAMABAD <span class="to">to</span> ISTANBUL </strong>
+                </div>
+                <div class="panel-group" id="accordion2">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapsethree">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapsethree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapsefour">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapsefour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <span class="valid"><time datetime="2018-12-09">Valid till: 9 Dec 2018</time></span>
+                  <button type="submit" class="btn btn-default">WANT TO BID</button>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="post-container">
+                <div class="post-img-holder">
+                  <img src="images/luggage.png" alt="Luggage">
+                  <div class="img-content">
+                    <span>Amber Depp</span>
+                    <ul class="star-rating">
+                      <li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+                      <li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+                      <li><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+                      <li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+                      <li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-details">
+                  <span> FLying From</span>
+                  <strong> ISLAMABAD <span class="to">to</span> ISTANBUL </strong>
+                </div>
+                <div class="panel-group" id="accordion3">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion3" href="#collapsefive">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapsefive" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion3" href="#collapsesix">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapsesix" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <span class="valid"><time datetime="2018-12-09">Valid till: 9 Dec 2018</time></span>
+                  <button type="submit" class="btn btn-default">WANT TO BID</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="post-container">
+                <div class="post-img-holder">
+                  <img src="images/luggage.png" alt="Luggage">
+                  <div class="img-content">
+                    <span>Amber Depp</span>
+                    <ul class="star-rating">
+                      <li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+                      <li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+                      <li><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+                      <li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+                      <li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-details">
+                  <span> FLying From</span>
+                  <strong> ISLAMABAD <span class="to">to</span> ISTANBUL </strong>
+                </div>
+                <div class="panel-group" id="accordion4">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion4" href="#collapseseven">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapseseven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion4" href="#collapseeight">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapseeight" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <span class="valid"><time datetime="2018-12-09">Valid till: 9 Dec 2018</time></span>
+                  <button type="submit" class="btn btn-default">WANT TO BID</button>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="post-container">
+                <div class="post-img-holder">
+                  <img src="images/luggage.png" alt="Luggage">
+                  <div class="img-content">
+                    <span>Amber Depp</span>
+                    <ul class="star-rating">
+                      <li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+                      <li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+                      <li><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+                      <li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+                      <li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-details">
+                  <span> FLying From</span>
+                  <strong> ISLAMABAD <span class="to">to</span> ISTANBUL </strong>
+                </div>
+                <div class="panel-group" id="accordion5">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion5" href="#collapsenine">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapsenine" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion5" href="#collapseten">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapseten" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <span class="valid"><time datetime="2018-12-09">Valid till: 9 Dec 2018</time></span>
+                  <button type="submit" class="btn btn-default">WANT TO BID</button>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="post-container">
+                <div class="post-img-holder">
+                  <img src="images/luggage.png" alt="Luggage">
+                  <div class="img-content">
+                    <span>Amber Depp</span>
+                    <ul class="star-rating">
+                      <li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+                      <li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+                      <li><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+                      <li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+                      <li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-details">
+                  <span> FLying From</span>
+                  <strong> ISLAMABAD <span class="to">to</span> ISTANBUL </strong>
+                </div>
+                <div class="panel-group" id="accordion6">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion6" href="#collapseeleven">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapseeleven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion6" href="#collapsetwelve">Price Details</a>
+                        </h4>
+                    </div>
+                    <div id="collapsetwelve" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-content">
+                  <span class="valid"><time datetime="2018-12-09">Valid till: 9 Dec 2018</time></span>
+                  <button type="submit" class="btn btn-default">WANT TO BID</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <ul class="footer-nav">
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">LICENSES</a></li>
+          </ul>
+          <div class="signature">
+            <span>© 2018, made by CuckooTravels</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
