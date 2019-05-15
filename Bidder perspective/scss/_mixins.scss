@@ -1,0 +1,53 @@
+@mixin container{
+    margin: 0 auto;
+    max-width: 1195px;
+    overflow: hidden;
+    &:before {
+        display: block;
+        content: ' ';
+        clear: both;
+      }
+}
+@mixin container-content{
+    
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    @media only screen and (max-width:$desktop){
+        max-width: 992px;
+    }
+    @media only screen and (max-width:$tablet){
+        max-width: 768px;
+    }    
+}
+@mixin img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    @extend %img;
+}
+@mixin body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+@mixin nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li{
+    display: inline-block;
+    }
+}
+@mixin a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+@mixin variable-container($width:auto){
+    max-width:$width;
+    display: block;
+}

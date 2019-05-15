@@ -1,0 +1,16 @@
+@mixin name {
+  display: block;
+  color: black;
+  background: wheat;
+}
+@mixin font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #386eb0;
+}
+@mixin ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

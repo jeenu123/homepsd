@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dickinson-Cameron</title>
+    <script src="https://use.fontawesome.com/90da5abeb4.js"></script>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="background">
+        <div id="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header-logo">
+                        <a href="#"><img src="images/logo.jpg" alt="dickinson cameron"></a>
+                    </div>
+                    <div class="header-content">
+                        <ul class="sub-nav">
+                            <li><a href="#">Settings<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+                            <li><a href="inner.html" target="_blank">Projects<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+                            <li><a href="#">Account</a></li>
+                            <li class="imp"><a href="#">Logout</a></li>
+                        </ul>
+                        <div class="navigation">
+                            <a href="#" class="nav-opener"><span></span></a>
+                            <nav class="nav">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Workflows<span class="fa fa-caret-down" aria-hidden="true"></span></a></li>
+                                    <li><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Calendar<span class="fa fa-caret-down" aria-hidden="true"></span></a></li>
+                                    <li><a href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i>Project Documents<span class="fa fa-caret-down" aria-hidden="true"></span></a></li>
+                                    <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Directory</a></li>
+                                    <li><a href="#"><i class="fa fa-files-o" aria-hidden="true"></i>User Files</a></li>
+                                    <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Settings<span class="fa fa-caret-down" aria-hidden="true"></span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="burberry">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Burberry</a></li>
+                        <li><a href="#">Forms</a></li>
+                        <li>RFIs</li>
+                        <li class="btn"><button type="submit">Create RFI</button></li>
+                    </ul>
+                </div>
+                <div class="graph-content">
+                    <div class="container">
+                        <div class="usage">
+                            <div class="usage-img">
+                                <img src="images/img-01.jpg" alt="Usage">
+                            </div>
+                            <span class="usage-content">12 Answered</span>
+                            <span class="usage-content-un">84 Unanswered</span>
+                        </div>
+
+                        <div class="graph">
+                            <img src="images/graph.jpg" alt="Graph">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-nav container">
+                    <ul>
+                        <li><a href="#">Assigned to Me</a></li>
+                        <li><a href="#">Answered</a></li>
+                        <li><a href="#">Unanswered</a></li>
+                        <li><a href="#">All</a></li>
+                    </ul>
+                </div>
+                <div class="filters container">
+                    <div class="filters-content">
+                        <form action="">
+                            <ul class="form">
+                                <li class="keywords">
+                                    <label for="keywords">Keywords (Title, Question, ID)</label>
+                                    <input type="text" name="form" id="keywords">
+                                </li>
+                                <li class="date">
+                                    <label for="date">Date Range</label>
+                                    <input type="text" name="form" id="date">
+                                    <span>To</span>
+                                    <input type="text" name="form" id="date">
+                                </li>
+                                <li>
+                                    <label for="creator">Filter by Creator</label>
+                                    <select>
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="creator">Filter by Trade</label>
+                                    <select>
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                <li class="apply"><button type="submit">Apply Filters</button></li>
+                                <li class="apply clear"><button type="submit">Clear Filters</button></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                <div class="table-holder">
+                    <table>
+                        <tr>
+                            <th><input type="checkbox"/>&nbsp;</th>
+                            <th>ID</th> 
+                            <th>Title</th>
+                            <th>Trade</th>
+                            <th>Owner</th>
+                            <th>Created</th>
+                            <th>Aging</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"/>&nbsp;</td>
+                            <td>3</td>
+                            <td>RFI Title will go here</td>
+                            <td>03000 Concrete</td>
+                            <td>Brian Naliboff</td>
+                            <td>11/2/14 3:34 PM</td>
+                            <td>32 Days</td>
+                            <td><span class="status danger success">Unasnswered</a></td>
+                            <td>
+                                <button type="submit">Preview</button>
+                                <select><option value="Actions">Actions</option></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"/>&nbsp;</td>
+                            <td>3</td>
+                            <td>RFI Title will go here</td>
+                            <td>03000 Concrete</td>
+                            <td>Brian Naliboff</td>
+                            <td>11/2/14 3:34 PM</td>
+                            <td>32 Days</td>
+                            <td><span class="status danger success">Unasnswered</a></td>
+                            <td>
+                                <button type="submit">Preview</button>
+                                <select><option value="Actions">Actions</option></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"/>&nbsp;</td>
+                            <td>3</td>
+                            <td>RFI Title will go here</td>
+                            <td>03000 Concrete</td>
+                            <td>Brian Naliboff</td>
+                            <td>11/2/14 3:34 PM</td>
+                            <td>32 Days</td>
+                            <td><span class="status danger success">Unasnswered</a></td>
+                            <td>
+                                <button type="submit">Preview</button>
+                                <select><option value="Actions">Actions</option></select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"/>&nbsp;</td>
+                            <td>3</td>
+                            <td>RFI Title will go here</td>
+                            <td>03000 Concrete</td>
+                            <td>Brian Naliboff</td>
+                            <td>11/2/14 3:34 PM</td>
+                            <td>32 Days</td>
+                            <td><span class="status danger success">Unasnswered</a></td>
+                            <td>
+                                <button type="submit">Preview</button>
+                                <select><option value="Actions">Actions</option></select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pagination-content">
+                    <div class="selection">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        <a href="#">With Selected</a>
+                        <a class="load" href="#">.Download</a>
+                    </div>
+                    <div class="pagination">
+                        <a href="#">&laquo; Prev</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&raquo; Next</a>
+                    </div>                              
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer-content">
+                    <aside>© 2014 <a href="#">Dickinson Cameron,</a> Inc. All Rights.</aside>
+                    <a href="#"><span class="subscribe">Subscribe to Calendar . Help &amp; Support</span></a>
+                    <p>v1.0 . Powered by <span class="red">Lithyem</span></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/query.js"></script>
+</body>
+</html>
